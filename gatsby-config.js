@@ -47,14 +47,14 @@ module.exports = {
         // we don't need these fields
         excludeFieldNames: [`blocksJSON`, `saveContent`],
         type: {
-          // Post: {
-          //  limit:
-          //    process.env.NODE_ENV === `development`
-          //      ? // Lets just pull 50 posts in development to make it easy on ourselves.
-          //        35
-          //      : // And then we can pull all posts in production
-          //        30,
-          //},
+          Post: {
+            limit:
+              process.env.NODE_ENV === `development`
+                ? // Lets just pull 50 posts in development to make it easy on ourselves.
+                  35
+                : // And then we can pull all posts in production
+                  30,
+          },
           // this shows how to exclude entire types from the schema
           // this example is for wp-graphql-gutenberg
           CoreParagraphBlockAttributesV2: {
