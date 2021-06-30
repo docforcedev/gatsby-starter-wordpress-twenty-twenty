@@ -41,6 +41,9 @@ module.exports = {
         html: {
           fallbackImageMaxWidth: 800,
         },
+        schema: {
+          perPage: 30
+        },
         // fields can be excluded globally.
         // this example is for wp-graphql-gutenberg.
         // since we can get block data on the `block` field
