@@ -53,7 +53,7 @@ module.exports = {
                 ? // Lets just pull 50 posts in development to make it easy on ourselves.
                   35
                 : // And then we can pull all posts in production
-                  30,
+                  null,
           },
           // this shows how to exclude entire types from the schema
           // this example is for wp-graphql-gutenberg
