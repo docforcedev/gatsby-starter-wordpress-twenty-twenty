@@ -8,6 +8,7 @@ require("dotenv").config({
 })
 
 module.exports = {
+  pathPrefix: '/wp-test',
   siteMetadata: {
     title: `Gatsby WordPress Twenty Twenty`,
     description: `Gatsby starter site for Twenty Twenty Gatsby Theme.`,
@@ -36,6 +37,9 @@ module.exports = {
         debug: {
           graphql: {
             writeQueriesToDisk: true,
+            showQueryVarsOnError: true,
+            showQueryOnError: true,
+            copyQueryOnError: true,
           },
         },
         html: {
