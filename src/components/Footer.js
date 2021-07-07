@@ -13,10 +13,10 @@ const Footer = ({}) => {
           <p>
             <a
               className="powered-by-wordpress"
-              href="https://www.henrikwirth.com"
+              href="https://ripple.com"
               rel="noreferrer noopener"
             >
-              Proudly presented by Henrik Wirth
+              Proudly presented by Ripple
             </a>
           </p>
         </div>
