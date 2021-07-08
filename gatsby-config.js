@@ -75,7 +75,6 @@ module.exports = {
           include: /\.inline\.svg$/, // See below to configure properly
         },
       },
-    },
-    `gatsby-plugin-percy`
+    }
   ],
 }
