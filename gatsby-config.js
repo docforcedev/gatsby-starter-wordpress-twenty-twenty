@@ -29,6 +29,10 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        production: {
+          hardCacheMediaFiles: true,
+          allow404Images: true
+        },
         url: process.env.WPGRAPHQL_URL,
         verbose: true,
         auth: {
