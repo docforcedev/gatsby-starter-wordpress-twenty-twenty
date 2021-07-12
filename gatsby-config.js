@@ -31,6 +31,12 @@ module.exports = {
       options: {
         url: process.env.WPGRAPHQL_URL,
         verbose: true,
+        auth: {
+          htaccess: {
+            password: process.env.HTTPBASICAUTH_PASSWORD,
+            username: process.env.HTTPBASICAUTH_USERNAME
+          }
+        },
         develop: {
           hardCacheMediaFiles: true,
         },
