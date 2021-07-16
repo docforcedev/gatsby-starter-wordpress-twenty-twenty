@@ -7,8 +7,19 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const auth = {}
+
+if (process.env.ENABLE_HTTP_AUTH === "true") {
+  auth.auth = {
+    htaccess: {
+      password: process.env.HTTPBASICAUTH_PASSWORD,
+      username: process.env.HTTPBASICAUTH_USERNAME,
+    },
+  }
+}
+
 module.exports = {
-  pathPrefix: '/wp-test',
+  pathPrefix: "/wp-test",
   siteMetadata: {
     title: `Gatsby WordPress Twenty Twenty`,
     description: `Gatsby starter site for Twenty Twenty Gatsby Theme.`,
@@ -30,16 +41,11 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         production: {
-          allow404Images: true
+          allow404Images: true,
         },
         url: process.env.WPGRAPHQL_URL,
         verbose: true,
-        auth: {
-          htaccess: {
-            password: process.env.HTTPBASICAUTH_PASSWORD,
-            username: process.env.HTTPBASICAUTH_USERNAME
-          }
-        },
+        ...auth,
         develop: {
           hardCacheMediaFiles: true,
         },
@@ -84,6 +90,6 @@ module.exports = {
           include: /\.inline\.svg$/, // See below to configure properly
         },
       },
-    }
+    },
   ],
 }
