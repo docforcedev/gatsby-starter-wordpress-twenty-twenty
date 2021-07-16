@@ -79,6 +79,10 @@ module.exports = {
           CoreParagraphBlockAttributesV2: {
             exclude: true,
           },
+          // https://github.com/gatsbyjs/gatsby/issues/29966#issuecomment-809523224
+          BlockEditorContentNode: {
+            exclude: true,
+          },
         },
       },
     },
