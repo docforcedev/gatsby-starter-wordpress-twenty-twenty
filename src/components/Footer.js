@@ -8,7 +8,7 @@ const Footer = ({}) => {
         <div className="footer-credits">
           <p className="footer-copyright">
             © {new Date().getFullYear()}{" "}
-            <Link to={"/"}>Gatsby Starter WordPress Twenty Twenty</Link>
+            <Link to={"/"}>Gatsby Starter </Link>
           </p>
           <p>
             <a

@@ -15,7 +15,7 @@ const PostPreview = ({ post, isLast }) => {
           <div className="entry-header-inner section-inner medium">
             <PostCategories categories={post.categories} />
 
-            <h2 className="entry-title heading-size-1">
+            <h2 className="entry-title heading-size-1 text-white">
               <Link
                 to={post.uri}
                 dangerouslySetInnerHTML={{ __html: post.title }}
