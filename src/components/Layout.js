@@ -20,7 +20,7 @@ const Layout = ({ children, bodyClass }) => {
       id={"GatsbyBody"}
       className={
         bodyClass +
-        " showing-menu-modal showing-modal black-bg" +
+        " showing-menu-modal showing-modal " +
         (backdropActive ? backdropClasses : "")
       }
     >
@@ -32,7 +32,7 @@ const Layout = ({ children, bodyClass }) => {
         {children}
       </main>
 
-      <FooterMenusWidgets />
+      {/* <FooterMenusWidgets /> */}
 
       <Footer />
     </div>

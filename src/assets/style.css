@@ -1369,7 +1369,7 @@ ul.social-icons li {
     width: 100%;
     height: 24px;
     margin-left: 30px;
-  background-image: url(https://ripple.com/wp-content/themes/ripple-beta/assets/img/logo/ripple-logo-text-white@2x.png);
+  /* background-image: url(https://ripple.com/wp-content/themes/ripple-beta/assets/img/logo/ripple-logo-text-white@2x.png); */
   background-size: 100%;
     background-repeat: no-repeat;
     background-position: left center;
@@ -2410,7 +2410,7 @@ button.search-untoggle {
 
 .singular .entry-header {
   background-color: #fff;
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 .entry-categories {
@@ -3529,8 +3529,8 @@ figure.wp-block-table.is-style-stripes {
 /* Font Families ----------------------------- */
 
 .entry-content {
-  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond,
-    "Times New Roman", serif;
+  /* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, */
+    /* "Times New Roman", serif; */
   letter-spacing: normal;
 }
 
@@ -4138,8 +4138,8 @@ div.comment:first-of-type {
 .widget_text dl,
 .widget_text dt,
 .widget-content .rssSummary {
-  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond,
-    "Times New Roman", serif;
+  /* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, */
+    /* "Times New Roman", serif; */
   letter-spacing: normal;
 }
 
@@ -5091,7 +5091,7 @@ a.to-the-top > * {
   /* POST HEADER */
 
   .singular .entry-header {
-    padding: 8rem 0;
+    padding: 1rem 0;
   }
 
   .entry-categories {

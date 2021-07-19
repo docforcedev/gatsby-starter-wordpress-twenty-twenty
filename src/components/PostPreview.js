@@ -8,7 +8,7 @@ const PostPreview = ({ post, isLast }) => {
   return (
     <>
       <article
-        className={`post-${post.databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
+        className={`post-${post.databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized black-bg`}
         id={`post-${post.databaseId}`}
       >
         <header className="entry-header has-text-align-center">
@@ -40,11 +40,12 @@ const PostPreview = ({ post, isLast }) => {
       </article>
 
       {!isLast && (
-        <hr
-          key={post.postId + "-hr"}
-          className="post-separator styled-separator is-style-wide section-inner"
-          aria-hidden="true"
-        />
+        <div></div>
+        // <hr
+        //   key={post.postId + "-hr"}
+        //   className="post-separator styled-separator is-style-wide section-inner black-bg" 
+        //   aria-hidden="true"
+        // />
       )}
     </>
   )
