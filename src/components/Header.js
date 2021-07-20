@@ -15,14 +15,15 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
     }
   `)
   return (
-    <header id="site-header" className="header-footer-group" role="banner">
+    <header id="site-header" className="header-footer-group black-bg" role="banner">
       <div className="header-inner section-inner">
         <div className="header-titles-wrapper">
           <div className="header-titles">
             <h1 className="site-title">
+              <img src="https://ripple.com/wp-content/themes/ripple-beta/assets/img/logo/ripple-logo-text-white@2x.png" ></img>
               <Link
                 to="/"
-                dangerouslySetInnerHTML={{ __html: wp.generalSettings.title }}
+                // dangerouslySetInnerHTML={{ __html: wp.generalSettings.title }}
               />
             </h1>
             <div

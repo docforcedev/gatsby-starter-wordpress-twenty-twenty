@@ -40,15 +40,15 @@ const post = ({ data }) => {
               className="entry-title"
               dangerouslySetInnerHTML={{ __html: title }}
             />
-            <div
+            {/* <div
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
-            />
+            /> */}
             <PostMeta title={title} author={author} date={date} />
           </div>
         </header>
 
-        <FeaturedMedia image={featuredImage} />
+        {/* <FeaturedMedia image={featuredImage} /> */}
 
         <div className="post-inner thin">
           <div
@@ -57,7 +57,7 @@ const post = ({ data }) => {
           />
         </div>
 
-        <div className="section-inner">
+        {/* <div className="section-inner">
           <AuthorBio author={author} />
           <ContentTypePagination
             previousPage={previousPage}
@@ -65,7 +65,7 @@ const post = ({ data }) => {
             contentType={"Post"}
           />
           <Comments />
-        </div>
+        </div> */}
       </article>
     </Layout>
   )

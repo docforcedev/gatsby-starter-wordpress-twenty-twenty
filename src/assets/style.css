@@ -1329,7 +1329,7 @@ ul.social-icons li {
 /* -------------------------------------------------------------------------- */
 
 #site-header {
-  background: #fff;
+  /* background: #fff; */
   position: relative;
 }
 
@@ -1365,12 +1365,22 @@ ul.social-icons li {
   font-size: 2.1rem;
   font-weight: 600;
   line-height: 1;
+  max-width: 83px;
+    width: 100%;
+    height: 24px;
+    margin-left: 30px;
+  /* background-image: url(https://ripple.com/wp-content/themes/ripple-beta/assets/img/logo/ripple-logo-text-white@2x.png); */
+  background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+
 }
 
 .site-title a {
   color: inherit;
   display: block;
   text-decoration: none;
+  
 }
 
 .site-title a:hover,
@@ -2400,7 +2410,7 @@ button.search-untoggle {
 
 .singular .entry-header {
   background-color: #fff;
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 .entry-categories {
@@ -2416,13 +2426,14 @@ button.search-untoggle {
 }
 
 .entry-categories a {
-  border-bottom: 0.15rem solid currentColor;
-  font-size: 1.4rem;
+  /* border-bottom: 0.15rem solid currentColor; */
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.036666667em;
   margin: 0.5rem 0 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
+  color: #0A93EB;
 }
 
 .entry-categories a:focus,
@@ -2473,7 +2484,7 @@ h2.entry-title {
   color: #6d6d6d;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-weight: 500;
   list-style: none;
   margin: -1rem 0 0 -2rem;
@@ -3518,8 +3529,8 @@ figure.wp-block-table.is-style-stripes {
 /* Font Families ----------------------------- */
 
 .entry-content {
-  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond,
-    "Times New Roman", serif;
+  /* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, */
+    /* "Times New Roman", serif; */
   letter-spacing: normal;
 }
 
@@ -4127,8 +4138,8 @@ div.comment:first-of-type {
 .widget_text dl,
 .widget_text dt,
 .widget-content .rssSummary {
-  font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond,
-    "Times New Roman", serif;
+  /* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, */
+    /* "Times New Roman", serif; */
   letter-spacing: normal;
 }
 
@@ -4869,7 +4880,8 @@ a.to-the-top > * {
   }
 
   .site-description {
-    display: block;
+    /* display: block; */
+    display: none;
   }
 
   .site-logo img {
@@ -5079,7 +5091,7 @@ a.to-the-top > * {
   /* POST HEADER */
 
   .singular .entry-header {
-    padding: 8rem 0;
+    padding: 1rem 0;
   }
 
   .entry-categories {
@@ -5091,7 +5103,7 @@ a.to-the-top > * {
   }
 
   .entry-categories a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 1rem 0 0 2rem;
   }
 
@@ -5109,7 +5121,7 @@ a.to-the-top > * {
   }
 
   .post-meta {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: -1.4rem 0 0 -3rem;
   }
 
