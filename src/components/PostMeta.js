@@ -1,6 +1,6 @@
 import React from "react"
+import Link from "./UniversalLink"
 import AuthorIcon from "../assets/svg/author.inline.svg"
-import { Link } from "gatsby"
 import DateIcon from "../assets/svg/date.inline.svg"
 import CommentIcon from "../assets/svg/comment.inline.svg"
 

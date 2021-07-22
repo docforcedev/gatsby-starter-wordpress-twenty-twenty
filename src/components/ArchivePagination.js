@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "./UniversalLink"
 
 const renderPreviousLink = ({ hasPreviousPage, currentPage, archivePath }) => {
   let previousLink = null

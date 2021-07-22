@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "./UniversalLink"
 
 const PostCategories = ({ categories }) => {
   if (!categories?.nodes || categories.nodes === 0) return null

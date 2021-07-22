@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "./UniversalLink"
 import PostMeta from "./PostMeta"
 import PostCategories from "./PostCategories"
 import FeaturedMedia from "./FeaturedMedia"

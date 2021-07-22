@@ -1,4 +1,5 @@
 import { Link as GatsbyLink } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import React from "react"
 
 // Since DOM elements <a> cannot receive activeClassName
@@ -9,6 +10,7 @@ const UniversalLink = ({
   to,
   activeClassName,
   partiallyActive,
+  disableAnimation = false,
   ...other
 }) => {
   // Tailor the following test to your environment.
@@ -17,15 +19,29 @@ const UniversalLink = ({
   const internal = /^\/(?!\/)/.test(to)
   // Use Gatsby Link for internal links, and <a> for others
   if (internal) {
+    if (disableAnimation) {
+      return (
+        <GatsbyLink
+          to={to}
+          activeClassName={activeClassName}
+          partiallyActive={partiallyActive}
+          {...other}
+        >
+          {children}
+        </GatsbyLink>
+      )
+    }
+
     return (
-      <GatsbyLink
+      <AniLink
         to={to}
+        cover
         activeClassName={activeClassName}
         partiallyActive={partiallyActive}
         {...other}
       >
         {children}
-      </GatsbyLink>
+      </AniLink>
     )
   }
   return (
