@@ -71,8 +71,9 @@ module.exports = {
         type: {
           Post: {
             limit:
-              process.env.NODE_ENV === `development`
-                ? // Lets just pull 50 posts in development to make it easy on ourselves.
+              process.env.NODE_ENV === `development` ||
+              process.env.BRANCH !== `master`
+                ? // Lets just pull 50 posts in development or PR builds to make it easy on ourselves.
                   35
                 : // And then we can pull all posts in production
                   null,
@@ -98,5 +99,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-transition-link`,
   ],
 }
