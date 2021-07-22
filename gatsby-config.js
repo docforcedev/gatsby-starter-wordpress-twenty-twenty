@@ -40,6 +40,9 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        schema: {
+           timeout: 120000
+        },
         production: {
           allow404Images: true,
         },
