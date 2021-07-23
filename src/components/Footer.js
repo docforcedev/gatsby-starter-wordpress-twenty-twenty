@@ -34,7 +34,7 @@ const Footer = ({}) => {
               </li>
               <li class="menu-ripplenet-committee">
                 <a href="https://dev-ripple-web.pantheonsite.io/ripplenet-committee/">
-                  RippleNet Committee
+                  RippleNet Committee 
                 </a>
               </li>
               <li class="menu-ripplenet-customer-login">
