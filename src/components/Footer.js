@@ -16,7 +16,7 @@ const Footer = ({}) => {
               href="https://ripple.com"
               rel="noreferrer noopener"
             >
-              Proudly presented by Ripple
+              Proudly presented by Ripple © 2021
             </a>
           </p>
         </div>
