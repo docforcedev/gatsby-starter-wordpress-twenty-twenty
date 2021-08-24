@@ -78,6 +78,15 @@ module.exports = {
                 : // And then we can pull all posts in production
                   null,
           },
+          Tag: {
+            limit:
+              process.env.NODE_ENV === `development` ||
+              process.env.BRANCH !== `master`
+                ? // Lets just pull 50 tags in development or PR builds to make it easy on ourselves.
+                  35
+                : // And then we can pull all tags in production
+                  null,
+          },
           // this shows how to exclude entire types from the schema
           // this example is for wp-graphql-gutenberg
           CoreParagraphBlockAttributesV2: {
